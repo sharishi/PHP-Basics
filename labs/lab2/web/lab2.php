@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab2</title>
     <style>
-        .iksweb {
+        .sweb {
             border-collapse: collapse;
         }
 
-        .iksweb td {
+        .sweb td {
             border: 1px solid black;
             padding: 8px;
         }
@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-<table class="iksweb">
+<table class="sweb">
     <tbody>
     <tr>
         <td colspan="3"><b>График работы докторов, каб. 333</b></td>
