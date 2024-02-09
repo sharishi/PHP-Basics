@@ -4,7 +4,8 @@ This repository contains my PHP laboratory works.
 
 ## Repository Structure
 
-- **lab1**: basic PHP syntax.
+- **lab_1**: basic PHP syntax.
+- **lab_2**: PHP+HTML.
 
 
 ## Running Instructions
@@ -14,7 +15,7 @@ Each lab folder contains specific instructions for running the corresponding lab
 <!-- ## List of Laboratory Works
 
 1. [Laboratory Work 1](lab1/): Brief description of Laboratory Work 1.
-2. [Laboratory Work 2](lab2/): Brief description of Laboratory Work 2.
+2. [Laboratory Work 2](lab_2/): Brief description of Laboratory Work 2.
 3. [Laboratory Work 3](lab3/): Brief description of Laboratory Work 3.
    ... -->
 
