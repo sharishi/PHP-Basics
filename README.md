@@ -17,7 +17,7 @@ Each lab folder contains specific instructions for running the corresponding lab
 
 1. [Laboratory Work 1](lab1/): Brief description of Laboratory Work 1.
 2. [Laboratory Work 2](lab_2/): Brief description of Laboratory Work 2.
-3. [Laboratory Work 3](lab3/): Brief description of Laboratory Work 3.
+3. [Laboratory Work 3](lab_3/): Brief description of Laboratory Work 3.
    ... -->
 
 ## Contact
