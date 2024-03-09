@@ -7,6 +7,7 @@ This repository contains my PHP laboratory works.
 - **lab_1**: basic PHP syntax.
 - **lab_2**: PHP+HTML.
 - **lab_3**: PHP+HTML+CSS(for,while,OOP,scandir).
+- **lab_4**: PHP-form manipulation.
 
 
 ## Running Instructions
