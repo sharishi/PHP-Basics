@@ -1,3 +1,42 @@
+<?php
+require_once "validator.php";
+
+// Instantiate the Validator class
+$validator = new Validator();
+
+$validator->addValidation('name', function ($name) {
+    return strlen($name) >= 3 and strlen($name) <= 20 and !preg_match('/\d/', $name);
+}, 'Name must be between 3 and 20 characters and should not contain digits.');
+
+$validator->addValidation('email', function ($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}, 'Invalid email address.');
+
+$validator->addValidation('comment', function ($comment) {
+    return !empty($comment) && strlen($comment) >= 10;
+}, 'Comment should not be empty and have a minimum length of 10 characters.');
+
+$validator->addValidation('data-processing', function ($dataProcessing) {
+    return !empty($dataProcessing);
+}, 'You must agree with data processing.');
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $formData = [
+        'name' => $_POST['name'],
+        'email' => $_POST['email'],
+        'comment' => $_POST['comment'],
+        'data-processing' => isset($_POST['data-processing']),
+    ];
+
+    $errors = $validator->validateForm($formData);
+    if (!empty($errors)) {
+        echo '<p>We have a problem! 😘</p>';
+        print_r($errors);
+    } else {
+        echo '<p>Thank you for your comment! 😘</p>';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -123,39 +162,3 @@
 </body>
 </html>
 
-<?php
-// Instantiate the Validator class
-$validator = new Validator();
-
-$validator->addValidation('name', function ($name) {
-    return strlen($name) >= 3 and strlen($name) <= 20 and !preg_match('/\d/', $name);
-}, 'Name must be between 3 and 20 characters and should not contain digits.');
-
-$validator->addValidation('email', function ($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
-}, 'Invalid email address.');
-
-$validator->addValidation('comment', function ($comment) {
-    return !empty($comment) && strlen($comment) >= 10;
-}, 'Comment should not be empty and have a minimum length of 10 characters.');
-
-$validator->addValidation('data-processing', function ($dataProcessing) {
-    return !empty($dataProcessing);
-}, 'You must agree with data processing.');
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $formData = [
-        'name' => $_POST['name'],
-        'email' => $_POST['email'],
-        'comment' => $_POST['comment'],
-        'data-processing' => isset($_POST['data-processing']),
-    ];
-
-    $errors = $validator->validateForm($formData);
-    if (!empty($errors)) {
-        echo '<p>We have a problem! 😘</p>';
-        print_r($errors);
-    } else {
-        echo '<p>Thank you for your comment! 😘</p>';
-    }
-}

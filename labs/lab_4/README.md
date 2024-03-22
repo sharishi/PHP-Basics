@@ -19,11 +19,11 @@
    каталог вашего проекта.  
    Если у вас нет веб-сервера, вы можете использовать встроенный сервер PHP для тестирования: -->
    ```bash 
-   php -S localhost:8000 labs\lab_3\web\lab4_1.php
-   php -S localhost:8000 labs\lab_3\web\lab4_2.php
-   php -S localhost:8000 labs\lab_3\web\lab4_3.php
-   php -S localhost:8000 labs\lab_3\web\lab4_3_1.php
-   php -S localhost:8000 labs\lab_3\web\lab4_4.php
+   php -S localhost:8000 labs\lab_4\web\lab4_1.php
+   php -S localhost:8000 labs\lab_4\web\lab4_2.php
+   php -S localhost:8000 labs\lab_4\web\lab4_3.php
+   php -S localhost:8000 labs\lab_4\web\lab4_3_1.php
+   php -S localhost:8000 labs\lab_4\web\lab4_4.php
 
 ## 2. Описание проекта
 
