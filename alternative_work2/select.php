@@ -1,4 +1,3 @@
-
 <h3>Informații suplimentare</h3>
 <form name="form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
     <table>
