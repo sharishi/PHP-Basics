@@ -58,8 +58,6 @@ if ($_REQUEST["register"]) {
 
 ?>
 
-
-<!-- Registration Form -->
 <div>
     <h2>Registration</h2>
     <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
@@ -75,7 +73,6 @@ if ($_REQUEST["register"]) {
         <label>
             <span>Password</span>
             <input type="password" name="password">
-            <!-- Add error message here if needed -->
         </label>
         <input type="submit" name="register" value="Register">
     </form>

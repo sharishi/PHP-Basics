@@ -48,7 +48,6 @@ if (isset($_POST["auth"])) {
 
 ?>
 
-<!-- Authentication Form -->
 <div>
     <h2>Authentication</h2>
     <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="post">
